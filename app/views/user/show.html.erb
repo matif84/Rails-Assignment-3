@@ -1,0 +1,8 @@
+<%= link_to 'User ', user_path(@user) %>
+
+<% @users.each do |user| %>
+ <%=user %>
+<% end %>
+
+<%= link_to(“Delete User”, 
+user_path(params[:id]), method: :delete)%>
